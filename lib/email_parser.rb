@@ -8,7 +8,7 @@ require 'pry'
 # 1. Initialize instance with a list of email addresses as a string.
 # 2. The #parse instance method should turn email addresses
 #    into an array of separated email addresses.
-#    -Use Regex to separate string using "," or " "
+#    -Use Regex to separate string using "," or ", "
 #    -Use .uniq to remove duplicates.
 
 class EmailAddressParser
