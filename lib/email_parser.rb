@@ -9,7 +9,6 @@ require 'pry'
 # 2. The #parse instance method should turn email addresses
 #    into an array of separated email addresses.
 #    -Use Regex to separate string using "," or " "
-#       - "*" is a modifier of 0 or more
 #    -Use .uniq to remove duplicates.
 
 class EmailAddressParser
@@ -20,9 +19,8 @@ class EmailAddressParser
         @addresses = addresses
     end 
 
-
     def parse
-        self.addresses = addresses.split(/[,| ] */).uniq
+        addresses.split(/, | /).uniq
     end 
 
 end 
