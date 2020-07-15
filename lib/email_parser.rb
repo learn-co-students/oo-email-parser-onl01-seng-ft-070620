@@ -9,21 +9,7 @@ class EmailAddressParser
     @emails = emails
   end
 
-  def self.parse(emails)
-
-  end
-
   def parse
-    emails_array = emails.split(/, | /)
-    parsed_emails = []
-
-    emails_array.each do |email|
-      if !parsed_emails.include?(email)
-        parsed_emails << email
-      end
-    end
-    parsed_emails
+    emails.split(/, | /).uniq
   end
-
-  parse("john@doe.com, person1@somewhere.org, person2@somewhere.org, person3@somewhere.org")
 end
