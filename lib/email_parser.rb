@@ -15,7 +15,6 @@ require 'pry'
 
 
 class EmailAddressParser
-
     attr_accessor :addresses
 
     def initialize(addresses)
@@ -23,7 +22,6 @@ class EmailAddressParser
     end 
 
     def parse
-        data = addresses.split(/, | /).uniq
+        addresses.split(/, | /).uniq
     end 
-
 end 
