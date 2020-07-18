@@ -11,6 +11,9 @@ require 'pry'
 #    -Use Regex to separate string using "," or ", "
 #    -Use .uniq to remove duplicates.
 
+## REWORK
+
+
 class EmailAddressParser
 
     attr_accessor :addresses
@@ -20,7 +23,7 @@ class EmailAddressParser
     end 
 
     def parse
-        addresses.split(/, | /).uniq
+        data = addresses.split(/, | /).uniq
     end 
 
 end 
